@@ -1,0 +1,11 @@
+.tickbox .box{
+cursor:pointer;
+background-repeat:no-repeat;
+background-size:contain;
+position:relative;
+display:inline-block;
+background-color:#DDDDDD;
+}
+.tickbox .box.ticked{
+background-color:#111111;
+}

@@ -1,0 +1,15 @@
+.tickcross{	
+position:relative;
+display:inline-block;
+}
+.tickcross .image{
+width:100%;
+height:100%;
+--spritesheet-image-name:unsure;
+}
+.tickcross.tick .image{
+--spritesheet-image-name:tick;
+}
+.tickcross.cross .image{
+--spritesheet-image-name:cross;
+}

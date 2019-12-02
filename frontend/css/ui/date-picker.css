@@ -1,0 +1,7 @@
+.date-picker-popup .popup{
+}.popup-date-picker.popup{
+	position:absolute;
+	width:150px;
+	height:150px;
+	display:none;
+}

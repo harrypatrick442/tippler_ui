@@ -1,0 +1,65 @@
+.tags-editor{
+	padding:3px;
+}
+.tags-editor .menu{
+	float:left;
+	padding-top:2px;
+	border-bottom-right-radius:2px;
+	height:22px;
+}.tags-editor .menu .add-wrapper{
+	float:left;
+}
+.tags-editor .menu .add-wrapper .text-add{
+	height:100%;
+	width:120px;
+	float:left;
+    box-sizing: border-box;
+	border-right:0px;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+	margin-left:2px;
+	height:22px;
+}
+.tags-editor .menu .add-wrapper .button-add{
+	height:100%;
+	margin-left:3px;
+    box-sizing: border-box;
+    background-color:rgb(197, 68, 62);
+	border-left:0px;
+    border-radius:3px;
+    float: left;
+    text-align: center;
+    padding: 3px;
+	padding-left:5px;
+	padding-right:5px;
+    cursor: pointer;
+    font-family: verdana, geneva, sans-serif;
+    color: #dddddd;
+}
+.tags-editor .menu .add-wrapper .button-add:hover{
+	color:#ffff;
+	cursor:pointer;
+}
+.tags-editor .tag{
+	background-color:#aaaaaa;
+	border-radius:3px;
+	min-height:22px;
+	float:left;
+	margin:2px;
+	padding:2px;
+	line-height:18px;
+	font-size:14px;
+	box-sizing:border-box;
+	word-wrap: break-word;
+}
+.tags-editor .tag .text-block{
+	float:left;
+}
+.tags-editor .tag .button.remove{
+	height:12px;
+	width:12px;
+	float:right;
+	margin-left:3px;
+	margin-top:3px;
+	cursor:pointer;
+}

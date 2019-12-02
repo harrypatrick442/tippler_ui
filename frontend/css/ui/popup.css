@@ -1,0 +1,6 @@
+.popup{
+	display:none;
+}
+.popup.visible{
+	display:block;
+}

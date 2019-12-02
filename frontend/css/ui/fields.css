@@ -1,0 +1,49 @@
+.fields .field{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	box-sizing:border-box;
+ }
+.one-field-per-row.fields .field{
+	width:100%;
+ }
+.two-fields-per-row.fields .field{
+	width:50%;
+}
+.three-fields-per-row.fields .field{
+	width:33.3%;
+}
+.field .field-key{
+	box-sizing: border-box;
+	display:inline-block;
+}
+.field.name-inline .field-key{
+	float:left;
+}
+.field .field-value-span{
+	display: block;
+	overflow: hidden;
+	padding-right: 5px;
+	box-sizing: border-box;
+	padding-left:4px;
+}
+.field.name-inline .field-value-span{
+	padding-left: 10px;
+}
+.field .field-value{
+	width:100%;
+	box-sizing:border-box;
+}
+.field textarea.field-value{
+	resize:none;
+} 	
+.field .tags-editor.field-value{
+	width:100%;
+	min-height:30px;
+} 	
+.field .text-block.field-value{
+	padding-top:2px;
+}
+.full-width-text-area, .full-width{
+	width:100% !important;
+}

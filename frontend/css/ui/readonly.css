@@ -1,0 +1,33 @@
+
+.readonly.select select,
+select.readonly{
+   -o-appearance: none;
+   -ms-appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+.readonly.select {
+    background: transparent;
+    box-shadow: 0;
+    outline: 0;
+	color:#000000;
+}
+select.readonly::-ms-expand, .readonly select::-ms-expand {
+    display: none;
+}
+.readonly textarea, .readonly input[type="text"],
+textarea.readonly, input[type="text"].readonly {
+	border:0;
+	background:0;
+}
+.readonly textarea, .readonly input[type="text"]:focus,
+textarea.readonly, input[type="text"].readonly:focus{
+    outline: none;
+    box-shadow: none;
+}
+.readonly .label{
+}
+.readonly .select{
+	
+}
