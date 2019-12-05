@@ -23,8 +23,6 @@ var ImageControl  = window['ImageControl']=(function(){
 		var DIDNT_MAP=' did not map to anything. Check the SemanticsMap in the strings folder';
 		if(semantic&&!name){
 			name = SemanticsMap[semantic];
-			console.log(semantic);
-			console.log(SemanticsMap);
 			if(!name)throwSemanticError(semantic);
 			if(semanticHover){
 				nameHover = SemanticsMap[semanticHover];
