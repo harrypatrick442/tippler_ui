@@ -75,10 +75,7 @@ var CheckboxArray = window['CheckboxArray'] = (function(){
 			function changed(value){
 				for(var i=0; i<_columns.length; i++){
 					var column = _columns[i];
-					if(column[S.GET_VALUE]()==value){
-						column[S.TICK]();
-						return;
-					}
+					column[(column[S.GET_VALUE]()==value?S.TICK:S.UNTICK)]();
 				}
 			}
 		}
