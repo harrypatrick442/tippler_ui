@@ -111,7 +111,11 @@ var Button = (function () {
                 e.stopPropagation();
             }
 			e.preventDefault();
-            methodNameClick&&model[methodNameClick]();
+			if(methodNameClick){
+				if(!model)throw new Error('No model supplied');
+				if(!model[methodNameClick])throw new Error('Model '+model.constructor.name+' has no '+methodName+' method');
+				model[methodNameClick]();
+			}
 			_click&&_click(e);
             dispatchClick();
             toggle();
