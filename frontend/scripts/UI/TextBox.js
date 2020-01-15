@@ -13,6 +13,7 @@
 		var autoHeight=params[S.AUTO_HEIGHT];
         var propertyNameDisabled = params[S.PROPERTY_NAME_DISABLED];
 		var propertyNameReadOnly = params[S.PROPERTY_NAME_READ_ONLY];
+		var methodNameOnEnter = params[S.METHOD_NAME_ON_ENTER];
 		var validityIndicator;
 		var _valueChanged=valueChanged;
 		var disabled;
@@ -37,6 +38,15 @@
         if (placeholder)
             element.placeholder = placeholder;
         element.classList.add('text-box');
+		if(methodNameOnEnter){
+			element.addEventListener("keydown", function(e) {
+				e=e||window.event;
+				if (e.keyCode === 13){
+					model[methodNameOnEnter]();
+					e.preventDefault()
+				}
+			});
+		}
         this[S.GET_ELEMENT] = function () { return element; };
 		this[S.GET_VALIDITY_INDICATOR]=function(){return validityIndicator;};
         element['addEventListener']('keyup', keyUp);
